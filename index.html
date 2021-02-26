@@ -45,7 +45,7 @@ http://zarabotat-na-sajte.ru/</a> - за что я ему благодарен.
 	const messaging = firebase.messaging();				
 					// Get registration token. Initially this makes a network call, once retrieved
 // subsequent calls to getToken will return from cache.
-messaging.getToken({ vapidKey: '<YOUR_PUBLIC_VAPID_KEY_HERE>' }).then((currentToken) => {
+messaging.getToken({ vapidKey: 'BDkO8iue5By4UcLUk5SCL0LLtDl9RWvSyqr0WOIjiXQTJmwH0yHxcrqidZ-PyJ9QwksTBHkh9wx88YK4xnn17_Y' }).then((currentToken) => {
   if (currentToken) {
     // Send the token to your server and update the UI if necessary
 console.log(currentToken);
