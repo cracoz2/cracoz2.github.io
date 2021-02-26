@@ -17,6 +17,9 @@
     messagingSenderId: "8001121591",
     appId: "1:8001121591:web:edb2ca0224a75ce78ebeb2"
   };
+
+// Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
  // Retrieve an instance of Firebase Messaging so that it can handle background
  // messages.
  const messaging = firebase.messaging();
