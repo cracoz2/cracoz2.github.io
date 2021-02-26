@@ -1,0 +1,52 @@
+
+<html>
+<head>
+	
+        <title>Главная страница - страница обо мне 2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+</head>
+<body>
+<center><h1>TEST PUSH 5</h1></center>
+	<button style="width:800px;height:75px" id="init_sub">подписаться</button>
+Краткая биография обо мне
+Родился в 1985 году в городе Москва. Закончил в 2008 году МАИ.
+На данный момент работаю ведущим инженером в крупной авиакомпании.
+Моя мечта стать ведущим по машине.
+
+Поскольку я люблю авиацию, то хотел бы поделиться несколькими интересными 
+фотографиями на эту тему
+<!-- 	<script src="https://pxl.egor-bronin.dev.altkraft.com/ak_container.js?id=MXwyNg.." ></script> -->
+<br/><br/>
+<br/><br/>
+<font style="color:green">Этот текст зеленый</font>
+<br/><br/>
+<b>Просто пример жирного текста</b>
+<br/><br/>
+Низ страницы
+<br/><br/>
+В данном примере мы рассмотрели кратко основные теги HTML, теперь можно пробовать создавать 
+несколько связанных страниц через ссылки и выкладывать сайт в интернет.
+<hr>
+Этот материал был написан благодаря сайту 
+<a href=http://zarabotat-na-sajte.ru/>
+http://zarabotat-na-sajte.ru/</a> - за что я ему благодарен. 
+<br/><br/>
+Спасибо. До новых встреч!
+
+
+<script>
+	$("#init_sub").click(function(){
+			      	try {
+     var akPush = new AKPush();
+     akPush.initSubscription(); // Show push subscribe browser popup
+     // ...
+ } catch (e) {
+      console.log(e);
+ } 
+			       });
+ 
+</script>
+
+</body>
+</html>
