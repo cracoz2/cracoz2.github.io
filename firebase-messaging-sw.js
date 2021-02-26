@@ -10,12 +10,13 @@
  // your app's Firebase config object.
  // https://firebase.google.com/docs/web/setup#config-object
  var firebaseConfig = {
-    apiKey: "AIzaSyC2KwZ2L14GTzTn5BdI2z8kKioPNj1UYzw",
-    authDomain: "testvapidkeys.firebaseapp.com",
-    projectId: "testvapidkeys",
-    storageBucket: "testvapidkeys.appspot.com",
-    messagingSenderId: "8001121591",
-    appId: "1:8001121591:web:edb2ca0224a75ce78ebeb2"
+    apiKey: "AIzaSyCLQ_OuvTKdWvqEFz2lr0Or3hkuuElJFTY",
+    authDomain: "testprojegor.firebaseapp.com",
+    databaseURL: "https://testprojegor.firebaseio.com",
+    projectId: "testprojegor",
+    storageBucket: "testprojegor.appspot.com",
+    messagingSenderId: "1097077474911",
+    appId: "1:1097077474911:web:7d5a0322a5a3e2da573dea"
   };
 
 // Initialize Firebase
