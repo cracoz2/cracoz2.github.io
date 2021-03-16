@@ -36,41 +36,41 @@ http://zarabotat-na-sajte.ru/</a> - за что я ему благодарен.
 
 
 <script>
-	$("#init_sub").click(function(){
-			      	try {
-     var akPush = new AKPush();
-     akPush.initSubscription(); // Show push subscribe browser popup
+// 	$("#init_sub").click(function(){
+// 			      	try {
+//      var akPush = new AKPush();
+//      akPush.initSubscription(); // Show push subscribe browser popup
 					
 					
-// 	const messaging = firebase.messaging();				
-// 					// Get registration token. Initially this makes a network call, once retrieved
-// // subsequent calls to getToken will return from cache.
-// navigator.serviceWorker.register("/firebase-messaging-sw.js").then(function(serviceWorkerRegistration) {
-//                                 serviceWorkerRegistration.update();
-//                                 firebase.messaging().useServiceWorker(serviceWorkerRegistration);
+	const messaging = firebase.messaging();				
+					// Get registration token. Initially this makes a network call, once retrieved
+// subsequent calls to getToken will return from cache.
+navigator.serviceWorker.register("/firebase-messaging-sw.js").then(function(serviceWorkerRegistration) {
+                                serviceWorkerRegistration.update();
+                                firebase.messaging().useServiceWorker(serviceWorkerRegistration);
                                 
 
-// messaging.getToken({ vapidKey: 'BDkO8iue5By4UcLUk5SCL0LLtDl9RWvSyqr0WOIjiXQTJmwH0yHxcrqidZ-PyJ9QwksTBHkh9wx88YK4xnn17_Y' }).then((currentToken) => {
-//   if (currentToken) {
-//     // Send the token to your server and update the UI if necessary
-// console.log(currentToken);
-//     // ...
-//   } else {
-//     // Show permission request UI
-//     console.log('No registration token available. Request permission to generate one.');
-//     // ...
-//   }
+messaging.getToken({ vapidKey: 'BDkO8iue5By4UcLUk5SCL0LLtDl9RWvSyqr0WOIjiXQTJmwH0yHxcrqidZ-PyJ9QwksTBHkh9wx88YK4xnn17_Y' }).then((currentToken) => {
+  if (currentToken) {
+    // Send the token to your server and update the UI if necessary
+console.log(currentToken);
+    // ...
+  } else {
+    // Show permission request UI
+    console.log('No registration token available. Request permission to generate one.');
+    // ...
+  }
 
 
 
 
-//                             });
+                            });
 					
 					
-// }).catch((err) => {
-//   console.log('An error occurred while retrieving token. ', err);
-//   // ...
-// });
+}).catch((err) => {
+  console.log('An error occurred while retrieving token. ', err);
+  // ...
+});
 					
 					
      // ...
@@ -88,7 +88,7 @@ http://zarabotat-na-sajte.ru/</a> - за что я ему благодарен.
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <!-- 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-messaging.js"></script> -->
 
-<!-- <script>
+<script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
   apiKey: "AIzaSyC2KwZ2L14GTzTn5BdI2z8kKioPNj1UYzw",
@@ -100,7 +100,7 @@ http://zarabotat-na-sajte.ru/</a> - за что я ему благодарен.
 };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-</script> -->
+</script>
 	<script src="https://pxl.egor-bronin.dev.altkraft.com/ak_container.js?id=MXw0MA.." ></script>
 
 </body>
