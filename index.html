@@ -20,7 +20,7 @@
 
 Поскольку я люблю авиацию, то хотел бы поделиться несколькими интересными 
 фотографиями на эту тему
-<!-- 	<script src="https://pxl.egor-bronin.dev.altkraft.com/ak_container.js?id=MXwyNg.." ></script> -->
+<script src="https://pxl.egor-bronin.dev.altkraft.com/ak_container.js?id=MXw3NQ.." ></script>
 <br/><br/>
 <br/><br/>
 <font style="color:green">Этот текст зеленый</font>
@@ -42,74 +42,16 @@ http://zarabotat-na-sajte.ru/</a> - за что я ему благодарен.
 <script>
 	$("#init_sub").click(function(){
 			      	try {
-//      var akPush = new AKPush();
-//      akPush.initSubscription(); // Show push subscribe browser popup
-					
-					
-	const messaging = firebase.messaging();				
-					// Get registration token. Initially this makes a network call, once retrieved
-// subsequent calls to getToken will return from cache.
-navigator.serviceWorker.register("/firebase-messaging-sw.js").then(function(serviceWorkerRegistration) {
-                                serviceWorkerRegistration.update();
-                                firebase.messaging().useServiceWorker(serviceWorkerRegistration);
-                                
-
-messaging.getToken({ vapidKey: 'BDkO8iue5By4UcLUk5SCL0LLtDl9RWvSyqr0WOIjiXQTJmwH0yHxcrqidZ-PyJ9QwksTBHkh9wx88YK4xnn17_Y' }).then((currentToken) => {
-  if (currentToken) {
-    // Send the token to your server and update the UI if necessary
-console.log(currentToken);
-    // ...
-  } else {
-    // Show permission request UI
-    console.log('No registration token available. Request permission to generate one.');
-    // ...
-  }
-
-
-
-
-                            });
-					
-					
-}).catch((err) => {
-  console.log('An error occurred while retrieving token. ', err);
-  // ...
-});
-		
-					
-					
-					
-					
-					} catch (e) {
-    console.log(e);
-} 
-                 });
-					
-					
+     var akPush = new AKPush();
+     akPush.initSubscription(); // Show push subscribe browser popup
+     // ...
+ } catch (e) {
+      console.log(e);
+ } 
+			       });
  
 </script>
 	
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<!-- <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script> -->
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<!-- 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-messaging.js"></script> -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-  apiKey: "AIzaSyC2KwZ2L14GTzTn5BdI2z8kKioPNj1UYzw",
-  authDomain: "testvapidkeys.firebaseapp.com",
-  projectId: "testvapidkeys",
-  storageBucket: "testvapidkeys.appspot.com",
-  messagingSenderId: "8001121591",
-//   appId: "1:8001121591:web:24eda0f4cea235138ebeb2"
-};
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-<!-- 	<script src="https://pxl.egor-bronin.dev.altkraft.com/ak_container.js?id=MXw0MA.." ></script> -->
 
 </body>
 </html>
