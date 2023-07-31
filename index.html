@@ -25,8 +25,18 @@
         </script>
         <script>
             
-      acpopup('create', 'AP-51ywNQ6yS7yS-_NsD', {'email': 'x@x12345.ru'});
-      acpopup('show', 'AP-51ywNQ6yS7yS-_NsD', {'email': 'x@x12345.ru'});
+      acpopup('create', 'AP-51ywNQ6yS7yS-_NsD', {
+    matching_mode: 'email',
+    matching: {
+        email: 'x@x12345.ru',
+    },
+});
+      acpopup('show', 'AP-51ywNQ6yS7yS-_NsD', {
+    matching_mode: 'email',
+    matching: {
+        email: 'x@x12345.ru',
+    },
+});
     
         </script>
 	
