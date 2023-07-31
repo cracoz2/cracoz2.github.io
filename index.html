@@ -7,7 +7,7 @@
 <!-- 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script> -->
 <!--  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-messaging.js"></script> -->
 	
-	<script>
+	        <script>
             
          (function (popupFunc) {
                 var script = document.createElement('script');
@@ -18,15 +18,15 @@
                 window[popupFunc].last_init = 1 * new Date()
                 window['ACPopupFuncNamePlaceholder'] = popupFunc;
                 script.async = true;
-                script.src = 'https://pxl.egor-bronin.dev.altkraft.com' + '/popup/v1/popupLibrary.js';
+                script.src = 'https://pxl.egor-bronin.dev.altkraft.com' + '/popup/v1/js/popupLibrary.js';
                 firstScript.parentNode.insertBefore(script, firstScript);
          })('acpopup');
     
         </script>
         <script>
             
-      acpopup('create', 'AP-9q7xuL2Mv6ty6zyR1');
-      acpopup('show', 'AP-9q7xuL2Mv6ty6zyR1');
+      acpopup('create', 'AP-51ywNQ6yS7yS-_NsD', {'email': 'x@x12345.ru'});
+      acpopup('show', 'AP-51ywNQ6yS7yS-_NsD', {'email': 'x@x12345.ru'});
     
         </script>
 	
